@@ -17,7 +17,7 @@
                 "type": "array",
                 "description": "Hello",
                 "items": {
-                  "$ref": "complex-modifications-rule-schema.json"
+                  "$ref": "complex-modifications-rule.json"
                 }
               }
             }
