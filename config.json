@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["profiles"],
+  "properties": {
+    "profiles": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "complex_modifications": {
+            "type": "object",
+            "description": "Complex modifications",
+            "required": ["rules"],
+            "properties": {
+              "rules": {
+                "type": "array",
+                "description": "Hello",
+                "items": {
+                  "$ref": "complex-modifications-rule-schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
